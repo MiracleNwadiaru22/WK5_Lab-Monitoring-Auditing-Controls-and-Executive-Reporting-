@@ -1,0 +1,71 @@
+{
+  "analysis_date": "2026-10-07T10:04:09.111351",
+  "total_failures": 7,
+  "failures": [
+    {
+      "failure": "Patch Management",
+      "severity": "High",
+      "description": "Critical and high severity vulnerabilities remain unpatched.",
+      "evidence": [
+        "Unknown vulnerability",
+        "Unknown vulnerability"
+      ],
+      "recommendation": "Implement automated patch management and enforce patching SLAs for critical and high vulnerabilities."
+    },
+    {
+      "failure": "Incident Detection",
+      "severity": "High",
+      "description": "A successful attack was simulated without evidence of timely detection.",
+      "evidence": [
+        "Successful Struts S2-045 exploitation",
+        "Simulated customer data access",
+        "Simulated data exfiltration"
+      ],
+      "recommendation": "Implement continuous security monitoring, intrusion detection, centralized logging, and alerting."
+    },
+    {
+      "failure": "Policy Implementation",
+      "severity": "High",
+      "description": "A patch management policy exists, but the critical Struts vulnerability remains unpatched.",
+      "evidence": "Patch Management Policy exists in governance records.",
+      "recommendation": "Ensure policies are implemented through enforceable procedures, ownership, monitoring, and accountability."
+    },
+    {
+      "failure": "Vulnerability Management",
+      "severity": "High",
+      "description": "A vulnerability management policy exists while critical vulnerabilities remain unresolved.",
+      "evidence": "1 critical vulnerability/vulnerabilities identified.",
+      "recommendation": "Establish formal vulnerability remediation timelines and verify closure of critical findings."
+    },
+    {
+      "failure": "Metrics and Measurement",
+      "severity": "Medium",
+      "description": "Patch compliance is measured, but critical vulnerabilities remain unresolved.",
+      "evidence": "Patch Compliance metric exists in governance records.",
+      "recommendation": "Use security metrics to drive corrective action and escalate failures to appropriate leadership."
+    },
+    {
+      "failure": "Security Architecture",
+      "severity": "High",
+      "description": "Web and database systems are not adequately segmented.",
+      "evidence": "Network segmentation control has not been implemented.",
+      "recommendation": "Implement network segmentation and restrict communication between public-facing and backend systems."
+    },
+    {
+      "failure": "Authentication and Access Control",
+      "severity": "Medium",
+      "description": "Database security configuration has not been hardened.",
+      "evidence": "MySQL security configuration remains unaddressed.",
+      "recommendation": "Remove default credentials, enforce strong authentication, apply least privilege, and secure database access."
+    }
+  ],
+  "overall_assessment": {
+    "critical_governance_concerns": 5,
+    "medium_governance_concerns": 2,
+    "attack_successful": true,
+    "critical_vulnerabilities": 1,
+    "struts_patched": false,
+    "mysql_secured": false,
+    "network_segmented": false
+  }
+}
