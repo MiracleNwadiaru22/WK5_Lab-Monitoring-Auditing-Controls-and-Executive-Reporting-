@@ -1,4 +1,3 @@
-# WK5_Lab-Monitoring-Auditing-Controls-and-Executive-Reporting-
 # Monitoring, Auditing Controls and Executive Reporting
 
 ## Project Overview
